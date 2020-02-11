@@ -9,6 +9,8 @@
     {% else %}
     <title>Imran's Web App</title>
     {% endif %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 
     <!--[if lte IE 8]>
@@ -26,15 +28,17 @@
     <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
     <!--<![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
-          $("p").click(function(){
-            $(this).hide();
-          });
+        $(document).ready(function () {
+            setTimeout(function () {
+                $("li.messageflash").hide();
+            }, 5000);
+
+            $("li.messageflash").click(function () {
+                $(this).hide();
+            });
         });
     </script>
-
 </head>
 <body>
     <header>
