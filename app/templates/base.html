@@ -32,7 +32,7 @@
         $(document).ready(function () {
             setTimeout(function () {
                 $("li.messageflash").hide();
-            }, 5000);
+            }, 4000);
 
             $("li.messageflash").click(function () {
                 $(this).hide();
@@ -58,7 +58,7 @@
     {% if messages %}
     <ul style="margin-left:25%;">
         {% for message in messages %}
-        <li class="messageflash" style="position: absolute;font-size: 20px;color:#eaeff0;z-index: 100;background-color:midnightblue">{{ message }}</li>
+        <li class="messageflash" style="position: absolute;font-size: 20px;color:#eaeff0;z-index: 100;background-color:midnightblue;list-style:none;">{{ message }}</li>
         {% endfor %}
     </ul>
     {% endif %}

@@ -34,7 +34,7 @@ def contactme():
         flash('Thanks for sending a message, I will reply as soon as possible.')
         print('This worked I think')
         #flash('Thanks for sending your message firstname={} lastname={}, I appreciate you reaching out'.format(form.firstname.data, form.lastname.data))
-        contact_collection.insert_one({'firstname' :form.firstname(), 'lastname':form.lastname(), 'email':form.email(), 'address':form.address(), 'city':form.city(),'country':form.country(),'reason':'', 'message':form.messagebody()})
+        contact_collection.insert_one({'firstname' :form.firstname.data, 'lastname':form.lastname.data, 'email':form.email.data, 'address':form.address.data, 'city':form.city.data,'country':form.country.data,'reason':form.reasons.data, 'message':form.messagebody.data})
         return redirect('/index')
     return render_template('contactme.html', title='Contact Me', form=form)
     

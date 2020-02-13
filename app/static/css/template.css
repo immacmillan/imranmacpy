@@ -57,6 +57,7 @@ h6,
     font-size: 100%;
     margin-left: 10px;
     margin-right: 10px;
+    color:#06273c;
 }
 
 .pure-form input[type] {
@@ -265,15 +266,15 @@ a.pure-button-primary {
     letter-spacing: 0.1em;
     margin: .75em 0 1em;
     color: #06273c;
-    font-family: 'Roboto';
     font-size: 30px;
 }
 .content-head-2 {
     font-weight: 300;
     text-transform: initial;
     letter-spacing: 0.01em;
-    margin: 1em 0 .05em;
+    margin: .5em 0 .05em;
     font-size: 20px;
+    color: #06273c;
 }
 
 .content-head-3 {
@@ -283,6 +284,7 @@ a.pure-button-primary {
     letter-spacing: 0.01em;
     margin: 0em 0 0em;
     font-size: 20px;
+    color: #06273c;
 }
 .content-head-4 {
     font-weight: 300;
@@ -290,8 +292,9 @@ a.pure-button-primary {
     text-transform: initial;
     letter-spacing: 0.01em;
     margin: 0em 0 0em;
-    margin-top: 90px; 
+    margin-top: 60px;
     font-size: 20px;
+    color: #06273c;
 }
 
 
@@ -324,6 +327,14 @@ a.pure-button-primary {
     background-position: center -20px;
     background-size: 35%;
     height: 120px;
+}
+.aboutsec1 {
+    background-image: url('images/profileshot.jpg'); /**/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top:-2%;
+    height: 400px;
 }
 .splitter {
     width: 100%;
