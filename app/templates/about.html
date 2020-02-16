@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Imran's Home Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <br />
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-2-5">
+            <p class="aboutsec1"></p>
+        </div>
+        <div class="pure-u-1 pure-u-md-3-5">
+            <h3 class="content-subhead">Let me share a little about myself, from one human to another</h3>
+            <p class="aboutpara1">Growing up in a suburb outside of the DC Metropolitan area, I always had a penchant for sports, technology and cars.</p>
+            <p class="aboutpara1">That quickly budded into a passion for engineering and technology, and ultimately led me to pursue a degree in Chemical & Biomolecular Engineering from the University of Pennsylvania.</p>
+            <p class="aboutpara1">Professionally, I quickly segued into business and technology consulting after graduation. That led me through stints working internationally throughout Africa, Europe and the Middle-East.</p>
+            <p class="aboutpara1">Ultimately, I found my way back to the DC area - and continued to learn technologies in the data analytics, software development, and IT architecture domains.</p>
+            <p class="aboutpara1">Currently, I Consult for Deloitte delivering Enterprise IT Architecture Services, Software Dev, Data Analytics and Product Management.</p>
+            <br />
+        </div>
+    </div>
+    <p class="aboutpara2a">On a less professional note, I still take the time to pursue my passions at every passing opportunity!</p>
+    <p class="aboutpara2b">"I truly believe that time spent nourishing oneself through connection to nature and physical exertion is second to none"</p>
+    <p class="aboutpara2c">"It is a pity to live life not knowing the capabilities of one's own body and mind"</p>
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-3-5">
+            <p class="aboutpara3">Of the outdoor activities I enjoy, snowboarding has got to be one of my favorites. The feeling of first lines in fresh powder is akin to flying weightlessly throw a river of snow.</p>
+            <p class="aboutpara3">Following closely behind are my three favorite competitive sports - tennis, basketball and football.</p>
+            <p class="aboutpara3">Things I've tried and would love to improve on include kite surfing, and surfing in general now that I'm based in California.</p>
+            <p class="aboutpara3">Beyond adrenaline seeking adventure sports - I'm always keen on a good hike, exploring a scenic vista, or meandering down a coastal byway.</p>
+            <p class="aboutpara3">You can find me most days either at my latpop, or the gym - in between a mtn-bike ride in the Ord and my daily commute to the Presidio.</p>
+            <a class="" href="{{ url_for('contactme') }}">
+                <p class="aboutpara3">If you do want to reach out for any reason, please follow this link - or use the Button Below</p>
+                <button class="button-secondary pure-button">Contact Me!</button>
+            </a>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-5">
+            <p class="aboutsec2"></p>
+        </div>
+    </div>
+
+    {% endblock %}
+</body>
+</html>
