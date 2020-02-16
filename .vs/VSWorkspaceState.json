@@ -4,8 +4,9 @@
     "\\app",
     "\\app\\static",
     "\\app\\static\\css",
+    "\\app\\static\\css\\images",
     "\\app\\templates"
   ],
-  "SelectedNode": "\\app\\static\\css\\template.css",
+  "SelectedNode": "\\app\\forms.py",
   "PreviewInSolutionExplorer": false
 }

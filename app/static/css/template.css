@@ -345,6 +345,98 @@ a.pure-button-primary {
     height: 400px;
 }
 
+.pure-u-md-1-1 {
+    text-align: center;
+    margin: 15px 0 0 0;
+    color: #06273c;
+    font-size: 22px;
+    font-weight: bold;
+}
+.galleryr1b1 {
+    background-image: url('images/bikesunset.jpg'); /**/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: -2%;
+    height: 300px;
+}
+.galleryr1b2 {
+    background-image: url('images/selambay.jpg'); /**/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: -2%;
+    height: 300px;
+}
+.galleryr1b3 {
+    background-image: url('images/eaglesunset.jpg'); /**/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: -2%;
+    height: 300px;
+}
+.galleryr1b4 {
+    background-image: url('images/vansunset.jpg'); /**/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: -2%;
+    height: 300px;
+}
+.galleryr1b5 {
+    background-image: url('images/befree.jpg'); /**/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: -2%;
+    height: 300px;
+}
+.galleryr2b1 {
+    background-image: url('images/bigsursunset.jpg'); /**/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: -2%;
+    height: 300px;
+}
+
+.galleryr2b2 {
+    background-image: url('images/areaclosed.jpg'); /**/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: -2%;
+    height: 300px;
+}
+
+.galleryr2b3 {
+    background-image: url('images/stonelake.jpg'); /**/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: -2%;
+    height: 300px;
+}
+
+.galleryr2b4 {
+    background-image: url('images/tropical.jpg'); /**/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: -2%;
+    height: 300px;
+}
+
+.galleryr2b5 {
+    background-image: url('images/bigsursunset2.jpg'); /**/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-top: -2%;
+    height: 300px;
+}
+
 .aboutpara1 {
     margin: 0 5% 0 5%;
     color: #6E727D;
@@ -354,6 +446,7 @@ a.pure-button-primary {
     margin: 0 10px 10px 10px;
     color: #06273C;
     font-weight: 300;
+    font-style:italic;
     text-align: center;
 }
 .aboutpara2b {
@@ -375,7 +468,7 @@ a.pure-button-primary {
 }
 .button-secondary {
     background: #06273C;
-    margin: 10px 0px 0px 35%;
+    margin: 10px 0px 20px 35%;
 }
 .splitter {
     width: 100%;
@@ -429,7 +522,7 @@ a.boxlink1:active {
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
-    
+    color: #06273c;
 }
 
 
