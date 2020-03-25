@@ -1,1 +1,2 @@
 FLASK_APP=imranmacpy.py
+FLASK_DEBUG=1

@@ -4,6 +4,44 @@
     <meta charset="utf-8">
     <title>Imran's Home Page</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+    <script>
+         $(document).ready(function() {
+            //alert("Dom Loaded.");
+            showSlides(1);
+        });
+    </script>
+
 </head>
 <body>
     {% extends "base.html" %}
@@ -51,40 +89,86 @@
                 <div class="backgroundsection1">
                     <div class="pure-g">
                         <div class="pure-u-1 pure-u-md-1-1">A picture speaks a thousand words - please enjoy some of my own</div>
-                        <div class="pure-u-1 pure-u-md-1-5">
-                            <p class="galleryr1b1"></p>
-                        </div>
-                        <div class="pure-u-1 pure-u-md-1-5">
-                            <p class="galleryr1b2"></p>
-                        </div>
-                        <div class="pure-u-1 pure-u-md-1-5">
-                            <p class="galleryr1b3"></p>
-                        </div>
-                        <div class="pure-u-1 pure-u-md-1-5">
-                            <p class="galleryr1b4"></p>
-                        </div>
-                        <div class="pure-u-1 pure-u-md-1-5">
-                            <p class="galleryr1b5"></p>
-                        </div>
-                        <div class="pure-u-1 pure-u-md-1-5">
-                            <p class="galleryr2b1"></p>
-                        </div>
-                        <div class="pure-u-1 pure-u-md-1-5">
-                            <p class="galleryr2b2"></p>
-                        </div>
-                        <div class="pure-u-1 pure-u-md-1-5">
-                            <p class="galleryr2b3"></p>
-                        </div>
-                        <div class="pure-u-1 pure-u-md-1-5">
-                            <p class="galleryr2b4"></p>
-                        </div>
-                        <div class="pure-u-1 pure-u-md-1-5">
-                            <p class="galleryr2b5"></p>
-                        </div>
+                        <br />
                     </div>
                 </div>
             </div>
         </div>
+
+          <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 10</div>
+                    <img src="{{ url_for('static', filename='css/images/areaclosed.jpg') }}" style="width:100%;padding:3%;">
+                    <div class="text">Big Sur, or Land Before Time?</div>
+                    </div>
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 10</div>
+                    <img src="{{ url_for('static', filename='css/images/bikesunset.jpg') }}" style="width:100%;padding:3%;">
+                    <div class="text">Chasing the Sunset at Wilder Ranch</div>
+                    </div>
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 10</div>
+                    <img src="{{ url_for('static', filename='css/images/selambay.jpg') }}" style="width:100%;padding:3%;">
+                    <div class="text">Golden Moments in SF with Fam</div>
+                    </div>
+                    <div class="mySlides fade">
+                    <div class="numbertext">4 / 10</div>
+                    <img src="{{ url_for('static', filename='css/images/eaglesunset.jpg') }}" style="width:100%;padding:3%;">
+                    <div class="text">As the Eagle Takes Flight, Worlds Divide</div>
+                    </div>
+                    <div class="mySlides fade">
+                    <div class="numbertext">5 / 10</div>
+                    <img src="{{ url_for('static', filename='css/images/vansunset.jpg') }}" style="width:100%;padding:3%;">
+                    <div class="text">Views from BC with Love</div>
+                    </div>
+                    <div class="mySlides fade">
+                    <div class="numbertext">6 / 10</div>
+                    <img src="{{ url_for('static', filename='css/images/befree.jpg') }}" style="width:100%;padding:3%;">
+                    <div class="text">Don't Be Afraid to Let Go</div>
+                    </div>
+                    <div class="mySlides fade">
+                    <div class="numbertext">7 / 10</div>
+                    <img src="{{ url_for('static', filename='css/images/bigsursunset.jpg') }}" style="width:100%;padding:3%;">
+                    <div class="text">Only My Favorite Places</div>
+                    </div>
+                    <div class="mySlides fade">
+                    <div class="numbertext">8 / 10</div>
+                    <img src="{{ url_for('static', filename='css/images/stonelake.jpg') }}" style="width:100%;padding:3%;">
+                    <div class="text">Keep Wandering - deep in BC</div>
+                    </div>
+                    <div class="mySlides fade">
+                    <div class="numbertext">9 / 10</div>
+                    <img src="{{ url_for('static', filename='css/images/tropical.jpg') }}" style="width:100%;padding:3%;">
+                    <div class="text">Is it a Mirage - Or Just McWay</div>
+                    </div>
+                    <div class="mySlides fade">
+                    <div class="numbertext">10 / 10</div>
+                    <img src="{{ url_for('static', filename='css/images/bigsursunset2.jpg') }}" style="width:100%;padding:3%;">
+                    <div class="text">These Sunsets Never Get Old</div>
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <!-- The dots/circles -->
+                <div class="dotcontainer" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                </div>
+    <!-- End of container -->
     </div>
 
     {% endblock %}
