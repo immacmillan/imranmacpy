@@ -94,7 +94,7 @@ label {
     background-color: #1f8dd6;
     color: white;
     padding: 0.5em 2em;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 a.pure-button-primary {
@@ -327,12 +327,22 @@ a.pure-button-primary {
     margin-top:1em;
 }
 .content .pure-g .box4p {
-    background-image: url('images/envelope.jpg'); /**/
+    background-image: url('images/envelope-shape.svg'); /**/
     background-repeat: no-repeat;
-    background-position: center -20px;
-    background-size: 35%;
+    background-position: center 0px;
+    background-size: 28%;
     height: 120px;
 }
+.content .pure-g .box1p:hover {
+    background-color: lightcyan;
+  }.content .pure-g .box2p:hover {
+    background-color: lightcyan;
+  }.content .pure-g .box3p:hover {
+    background-color: lightcyan;
+  }.content .pure-g .box4p:hover {
+    background-color: lightcyan;
+  }
+
 .aboutsec1 {
     background-image: url('images/profileshot.jpg'); /**/
     background-repeat: no-repeat;
@@ -450,23 +460,29 @@ a.pure-button-primary {
     font-weight: 300;
 }
 .aboutpara2a {
-    margin: 0 10px 10px 10px;
+    margin: 0 10% 10px 0px;
     color: #06273C;
     font-weight: 300;
     font-style:italic;
     text-align: center;
+    font-size: 120%;
+    text-indent: 10%;
 }
 .aboutpara2b {
-    margin: 0 10px 10px 10px;
+    margin: 0 15% 10px 0px;
     color: #06273C;
     font-weight: bold;
     text-align: center;
+    text-indent: 15%;
+    font-size: 110%;
 }
 .aboutpara2c {
-    margin: 0 10px 25px 10px;
+    margin: 0 15% 25px 0px;
     color: #06273C;
     font-weight: bold;
     text-align: center;
+    text-indent: 15%;
+    font-size: 110%;
 }
 .aboutpara3 {
     margin: 0 5% 0 5%;
@@ -487,11 +503,11 @@ a.pure-button-primary {
 }
 .backgroundsection1 {
     width: 100%;
-    background-image: url('images/woodpanel.jpg');
+    background-image: url('images/woodpanelxx.jpeg');
    /* background-color: #eaeff0; */
     background-position: left;
     background-size: contain;
-    margin-top: -26px;
+    margin-top: -20px;
     padding-top: 1%;
     height: 120px;
 }
@@ -509,7 +525,7 @@ a.pure-button-primary {
     background-size: 35%;
     height: 120px;
 }
-/*addressing the link styling*/
+/*addressing the link styling, not working*/
 
 a.boxlink1:link {
     text-decoration: none;
@@ -532,7 +548,9 @@ a.boxlink1:active {
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
     color: #06273c;
-}
+}.content-subhead:hover {
+    color: royalblue;
+  }
 
 
 
@@ -699,6 +717,13 @@ a.boxlink1:active {
     }
     .content .pure-g .box1p {
         background-position: center 1px;
+        background-size: 22%;
+    }.content .pure-g .box2p {
+        background-size: 20%;
+    }.content .pure-g .box3p {
+        background-size: 22%;
+    }.content .pure-g .box4p {
+        background-size: 25%;
     }
     .backgroundsection1 {
         margin-top: 0px;
